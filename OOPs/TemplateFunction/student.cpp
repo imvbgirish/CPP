@@ -13,5 +13,3 @@ float Student::multiply(T m1, U m2, V m3){
     return m1*m2*m3;
 }
 template float Student::multiply<int,float,int>(int,float,int);
-
-

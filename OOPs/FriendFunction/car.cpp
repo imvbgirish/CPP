@@ -8,8 +8,8 @@ Car::Car(std::string color){
 
 void Car::move(Vehicle &v)
 {
-    std::cout << v.m_wheels << std::endl;
-    std::cout << m_color << std::endl;
+    std::cout << "Wheels: "<< v.m_wheels << std::endl;
+    std::cout << "Color: " << m_color << std::endl;
 }
 
 Car::~Car(){
