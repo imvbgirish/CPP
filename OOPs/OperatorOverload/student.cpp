@@ -1,9 +1,8 @@
 #include "student.h"
 #include <iostream>
 
-Student::Student()
-{
-
+Student::Student(){
+    std::cout << "Default constructor called" << std::endl;
 }
 
 Student::Student(int marks1, int marks2){
