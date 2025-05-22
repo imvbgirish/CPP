@@ -4,6 +4,7 @@
 
 Car::Car(std::string color){
     this->m_color = color;
+    std::cout << "car constructor" << std::endl;
 }
 
 void Car::move(Vehicle &v)
@@ -13,7 +14,8 @@ void Car::move(Vehicle &v)
 }
 
 Car::~Car(){
-    std::cout << "Destructor called" << std::endl;
+    std::cout << "car Destructor called" << std::endl;
 }
+
 
 

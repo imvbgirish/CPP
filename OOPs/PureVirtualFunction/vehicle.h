@@ -7,9 +7,10 @@ private:
     int m_headlights;
 public:
     Vehicle();
-    ~Vehicle();
+    virtual ~Vehicle();
 
     virtual void move() = 0;
+    void stop();
 };
 
 #endif // VEHICLE_H

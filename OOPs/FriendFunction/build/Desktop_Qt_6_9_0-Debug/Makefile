@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = FriendFunction1.0.0
-DISTDIR = /home/girish-v-b/Desktop/CPP/OOPs/FriendFunction/build/Desktop_Qt_6_9_0-Debug/.tmp/FriendFunction1.0.0
+DISTDIR = /home/girish-v-b/CPP/OOPs/FriendFunction/build/Desktop_Qt_6_9_0-Debug/.tmp/FriendFunction1.0.0
 LINK          = g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS)    
@@ -273,6 +273,7 @@ DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../.qmake.stash \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -516,6 +517,7 @@ Makefile: ../../FriendFunction.pro /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linu
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -746,6 +748,7 @@ Makefile: ../../FriendFunction.pro /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linu
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf:
