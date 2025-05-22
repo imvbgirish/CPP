@@ -9,3 +9,8 @@ Vehicle::~Vehicle(){
     std::cout << "Vehicle destructed" << std::endl;
 }
 
+void Vehicle::stop()
+{
+    std::cout << "Vehicle stopped" << std::endl;
+}
+

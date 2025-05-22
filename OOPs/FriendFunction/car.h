@@ -2,7 +2,7 @@
 #define CAR_H
 
 #include <string>
-class Vehicle;
+class Vehicle; //Forward declaration
 
 class Car{
 private:
