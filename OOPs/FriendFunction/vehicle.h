@@ -9,6 +9,7 @@ public:
     Vehicle(int wheels);
     ~Vehicle();
     friend void Car::move(Vehicle&);
+    void stop();
 };
 
 #endif // VEHICLE_H
