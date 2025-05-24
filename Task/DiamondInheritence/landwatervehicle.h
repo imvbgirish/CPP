@@ -6,9 +6,13 @@
 
 class LandWaterVehicle : public LandVehicle, public WaterVehicle
 {
+
 public:
     LandWaterVehicle();
     ~LandWaterVehicle();
+    LandWaterVehicle(int wheels);
+
+    void moveOnLandWater();
 };
 
 #endif // LANDWATERVEHICLE_H

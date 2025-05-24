@@ -9,6 +9,7 @@ protected:
     void stopVehicle();
 public:
     Vehicle();
+    Vehicle(int wheels);
     ~Vehicle();
 };
 
