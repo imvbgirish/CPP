@@ -1,8 +1,12 @@
-#include "vehicle.h"
+#include "landwatervehicle.h"
 
 int main()
 {
-    Vehicle vehicle;
+    LandWaterVehicle lwvehicle(4);
+    lwvehicle.moveOnLand();
+    lwvehicle.moveOnWater();
+    lwvehicle.moveOnLandWater();
+    lwvehicle.moveVehicle();
 
     return 0;
 }

@@ -5,9 +5,12 @@
 
 class Car : public Vehicle
 {
+private:
+    int m_headlights;
 public:
     Car();
     ~Car();
+    Car(int wheels,int headlights);
 };
 
 #endif // CAR_H

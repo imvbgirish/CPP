@@ -6,9 +6,11 @@
 
 class Omnivorous : public Herbivorous , public Carnivorous
 {
+    std::string m_food;
 public:
     Omnivorous();
     ~Omnivorous();
+    Omnivorous(std::string herbFood,std::string carnFood,std::string omnifood);
 
     void eatMeatGrass();
 };

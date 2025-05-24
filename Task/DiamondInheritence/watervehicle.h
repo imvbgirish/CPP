@@ -3,11 +3,14 @@
 
 #include "vehicle.h"
 
-class WaterVehicle : public Vehicle
+class WaterVehicle :virtual public Vehicle
 {
 public:
     WaterVehicle();
     ~WaterVehicle();
+    WaterVehicle(int wheels);
+
+    void moveOnWater();
 };
 
 #endif // WATERVEHICLE_H

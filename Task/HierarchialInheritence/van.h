@@ -5,9 +5,12 @@
 
 class Van : private Vehicle
 {
+private:
+    int m_seats;
 public:
     Van();
     ~Van();
+    Van(int wheels,int seats);
     void moveVan();
 };
 
