@@ -3,11 +3,14 @@
 
 #include "vehicle.h"
 
-class LandVehicle : public Vehicle
+class LandVehicle :virtual public Vehicle
 {
 public:
     LandVehicle();
     ~LandVehicle();
+    LandVehicle(int wheels);
+
+    void moveOnLand();
 };
 
 #endif // LANDVEHICLE_H

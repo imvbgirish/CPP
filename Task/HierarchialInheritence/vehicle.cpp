@@ -18,3 +18,5 @@ void Vehicle::stopVehicle()
     std::cout << "Vehicle stopped" << std::endl;
 }
 
+Vehicle::Vehicle(int wheels):m_wheels{wheels}{}
+
