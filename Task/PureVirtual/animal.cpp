@@ -1,7 +1,9 @@
 #include "animal.h"
 #include <iostream>
 
-Animal::Animal() {}
+Animal::Animal() {
+    std::cout << "Animal constructed" << std::endl;
+}
 
 Animal::~Animal()
 {

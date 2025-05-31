@@ -16,6 +16,7 @@ int main()
 
     Camera *ptr0 = new SmartDevice;
     Phone *ptr1 = new SmartDevice;
+
     cout << "\n";
 
     ptr0->show();

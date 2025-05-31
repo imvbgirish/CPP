@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_QML_DEBUG
 CFLAGS        = -pipe -g -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++1z -Wall -Wextra $(DEFINES)
-INCPATH       = -I../../../MemberInitializerMultipleInheritence -I. -I/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++
+INCPATH       = -I../../../MemberInitializerHierarchialInheritence -I. -I/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/girish-v-b/Qt/6.9.0/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = MemberInitializerMultipleInheritence1.0.0
-DISTDIR = /home/girish-v-b/CPP/Task/MemberInitializerMultipleInheritence/build/Desktop_Qt_6_9_0-Debug/.tmp/MemberInitializerMultipleInheritence1.0.0
+DISTDIR = /home/girish-v-b/CPP/Task/MemberInitializerHierarchialInheritence/build/Desktop_Qt_6_9_0-Debug/.tmp/MemberInitializerMultipleInheritence1.0.0
 LINK          = g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS)    
@@ -275,6 +275,7 @@ DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../.qmake.stash \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -520,6 +521,7 @@ Makefile: ../../MemberInitializerMultipleInheritence.pro /home/girish-v-b/Qt/6.9
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -750,6 +752,7 @@ Makefile: ../../MemberInitializerMultipleInheritence.pro /home/girish-v-b/Qt/6.9
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -811,10 +814,12 @@ car.o: ../../car.cpp ../../car.h \
 		../../vehicle.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o car.o ../../car.cpp
 
-main.o: ../../main.cpp 
+main.o: ../../main.cpp ../../car.h \
+		../../vehicle.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
-truck.o: ../../truck.cpp ../../truck.h
+truck.o: ../../truck.cpp ../../truck.h \
+		../../vehicle.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o truck.o ../../truck.cpp
 
 vehicle.o: ../../vehicle.cpp ../../vehicle.h
