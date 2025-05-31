@@ -6,9 +6,16 @@ Student::Student(){
 }
 
 Student::Student(int marks1, int marks2){
-    std::cout << "Constructer called" << std::endl;
+    std::cout << "Parameterized Constructer called" << std::endl;
     this->m_marks1 = marks1;
     this->m_marks2 = marks2;
+}
+
+Student::Student(Student &other)
+{
+    this->m_marks1 = other.m_marks1;
+    this->m_marks2 = other.m_marks2;
+    std::cout << "copy constructor called" << std::endl;
 }
 
 void Student::setMarks1(int marks1){
@@ -46,6 +53,12 @@ Student Student::operator-(const Student& s){
 bool Student::operator<(const Student &s) const{
     return (this->m_marks1 < s.m_marks1) &&
            (this->m_marks2 < s.m_marks2);
+}
+
+bool Student::operator>(const Student &s) const
+{
+    return (this->m_marks1 > s.m_marks1) &&
+           (this->m_marks1 > s.m_marks2);
 }
 
 int Student::getMarks1() const{

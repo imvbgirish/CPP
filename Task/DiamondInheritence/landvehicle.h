@@ -3,7 +3,7 @@
 
 #include "vehicle.h"
 
-class LandVehicle :virtual public Vehicle
+class LandVehicle :virtual public Vehicle   //if not given virtual, says function found in multiple base classes
 {
 public:
     LandVehicle();
