@@ -1,16 +1,16 @@
 #include "derived.h"
 #include <iostream>
 
-derived::derived() {
+Derived::Derived() {
     std::cout << "derived constructor" << std::endl;
 }
 
-derived::~derived()
+Derived::~Derived()
 {
     std::cout << "derived destructor" << std::endl;
 }
 
-void derived::fun()
+void Derived::fun()
 {
     std::cout << "Derived fun" << std::endl;
 }

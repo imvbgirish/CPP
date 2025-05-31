@@ -5,6 +5,7 @@ class Student{
 public:
     Student();
     Student(int marks1,int marks2);
+    Student(Student &other);
     void setMarks1(int marks1);
     int getMarks1() const;
 
@@ -14,6 +15,7 @@ public:
     Student operator+(const Student& s) const;
     Student operator-(const Student& s);
     bool operator<(const Student& s) const;
+    bool operator>(const Student& s) const;
 
     ~Student();
 private:

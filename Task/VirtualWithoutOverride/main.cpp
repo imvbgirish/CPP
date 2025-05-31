@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     Base *ptr0 = new Base();
-    Base *ptr1 = new derived;
+    Base *ptr1 = new Derived;
     ptr0->fun();
     ptr1->fun();
 

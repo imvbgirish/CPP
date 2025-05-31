@@ -3,12 +3,11 @@
 
 #include "base.h"
 
-class derived : public Base
+class Derived : public Base
 {
 public:
-    derived();
-    ~derived();
-    virtual void fun();
+    Derived();
+    ~Derived();
 };
 
 #endif // DERIVED_H

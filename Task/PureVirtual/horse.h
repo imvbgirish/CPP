@@ -8,6 +8,9 @@ class Horse : public Animal
 public:
     Horse();
     ~Horse();
+
+    void move() override;
+
 };
 
 #endif // HORSE_H
