@@ -8,6 +8,8 @@ class Derived : public Base
 public:
     Derived();
     ~Derived();
-    virtual void fun();};
+    // void fun() override;    // Cannot be redeclared
+    virtual void fun();
+};
 
 #endif // DERIVED_H
