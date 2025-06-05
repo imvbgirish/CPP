@@ -52,10 +52,12 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../../employee.cpp \
+SOURCES       = ../../baseobject.cpp \
+		../../employee.cpp \
 		../../main.cpp \
 		../../office.cpp 
-OBJECTS       = employee.o \
+OBJECTS       = baseobject.o \
+		employee.o \
 		main.o \
 		office.o
 DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
@@ -273,6 +275,7 @@ DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../.qmake.stash \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -286,8 +289,10 @@ DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exceptions.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/yacc.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/lex.prf \
-		../../../../EmpOfficeTask.pro employee.h \
-		office.h ../../employee.cpp \
+		../../../../EmpOfficeTask.pro baseobject.h \
+		employee.h \
+		office.h ../../baseobject.cpp \
+		../../employee.cpp \
 		../../main.cpp \
 		../../office.cpp
 QMAKE_TARGET  = EmpOfficeTask
@@ -516,6 +521,7 @@ Makefile: ../../EmpOfficeTask.pro /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -746,6 +752,7 @@ Makefile: ../../EmpOfficeTask.pro /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -803,16 +810,22 @@ compiler_clean:
 
 ####### Compile
 
+baseobject.o: ../../baseobject.cpp ../../baseobject.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o baseobject.o ../../baseobject.cpp
+
 employee.o: ../../employee.cpp ../../employee.h \
+		../../baseobject.h \
 		../../office.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o employee.o ../../employee.cpp
 
 main.o: ../../main.cpp ../../office.h \
-		../../employee.h
+		../../employee.h \
+		../../baseobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
 office.o: ../../office.cpp ../../office.h \
-		../../employee.h
+		../../employee.h \
+		../../baseobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o office.o ../../office.cpp
 
 ####### Install
