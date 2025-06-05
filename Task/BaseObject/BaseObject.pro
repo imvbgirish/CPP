@@ -4,12 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        baseobject.cpp \
         employee.cpp \
         main.cpp \
+        mybaseobject.cpp \
         office.cpp
 
 HEADERS += \
-    baseobject.h \
     employee.h \
+    mybaseobject.h \
     office.h

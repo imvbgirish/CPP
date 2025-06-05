@@ -1,18 +1,16 @@
 #ifndef OFFICE_H
 #define OFFICE_H
 
-#include <string>
-#include "baseobject.h"
-#include "employee.h"
+#include "mybaseobject.h"
 
-
-class Office : public BaseObject
+class Office : public MyBaseObject
 {
 public:
     Office(const std::string& name);
     ~Office();
-    void addEmployee(Employee* employee);
     void print() override;
+    void addEmployee(MyBaseObject* employee) override;
+    void getMe() override;
 };
 
 #endif // OFFICE_H
