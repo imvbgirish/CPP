@@ -11,7 +11,7 @@ public:
     Herbivorous();
     ~Herbivorous();
     Herbivorous(std::string food);
-    void eats();
+    virtual void eats();
     std::string getHerbivorousFood() const;
 
 protected:
