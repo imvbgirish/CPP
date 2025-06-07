@@ -14,6 +14,8 @@ public:
 protected:
     void closeEvent(QCloseEvent *event) override;  // Override closeEvent to test
     void reject() override;                         // Override reject to test
+    void setVisible(bool visible) override;
+
 };
 
 #endif // MYDIALOG_H
