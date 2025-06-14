@@ -1,4 +1,4 @@
-QT += core gui
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,13 +9,11 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Shape.cpp \
     main.cpp \
-    mainwindow.cpp
+    widget.cpp
 
 HEADERS += \
-    Shape.h \
-    mainwindow.h
+    widget.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

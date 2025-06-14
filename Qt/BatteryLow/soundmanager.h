@@ -11,6 +11,7 @@ public:
 
 public slots:
     void announce(QString message);
+
 };
 
 #endif // SOUNDMANAGER_H
