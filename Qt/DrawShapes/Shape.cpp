@@ -1,37 +1,39 @@
 #include "Shape.h"
 #include <QPainter>
 
-Shape::Shape(QWidget *parent) : QWidget(parent), penWidth(1), penColor(Qt::black), brushColor(Qt::yellow) {
+Shape::Shape(QWidget *parent) : QWidget(parent), penWidth(1), penColor(Qt::white), brushColor(Qt::black) {
     setMinimumSize(500, 500);
+    qDebug() << Q_FUNC_INFO;
 }
 
-void Shape::setShape(Shape::ShapeType shape) {
+Shape::~Shape()
+{
+    qDebug() << "Shape Destructor";
+}
+
+
+void Shape::setProperties(Shape::ShapeType shape, int width, const QColor &penCol, const QColor &brushCol) {
+    qDebug() << Q_FUNC_INFO;
+
     currentShape = shape;
-    update();
-}
-
-void Shape::setPenWidth(int width) {
     penWidth = width;
+    penColor = penCol;
+    brushColor = brushCol;
     update();
 }
 
-void Shape::setPenColor(const QColor &color) {
-    penColor = color;
-    update();
-}
-
-void Shape::setBrushColor(const QColor &color) {
-    brushColor = color;
-    update();
-}
 
 Shape::ShapeType Shape::currentShapeType() const
 {
+    qDebug() << Q_FUNC_INFO;
     return currentShape;
 }
 
 void Shape::paintEvent(QPaintEvent *)
 {
+
+    qDebug() << Q_FUNC_INFO;
+
     QPainter painter(this);
     painter.setPen(QPen(penColor, penWidth));
     painter.setBrush(QBrush(brushColor));
