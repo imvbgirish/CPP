@@ -1,0 +1,4 @@
+module IconType
+typeinfo appIconType.qmltypes
+prefer :/IconType/
+

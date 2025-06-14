@@ -1,0 +1,42 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "MyEmoji"
+                },
+                {
+                    "name": "QML.Creatable",
+                    "value": "true"
+                },
+                {
+                    "name": "QML.CreationMethod",
+                    "value": "structured"
+                }
+            ],
+            "className": "Emoji",
+            "gadget": true,
+            "lineNumber": 7,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 0,
+                    "name": "myEmojiType",
+                    "read": "myEmojiType",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setMyEmojiType"
+                }
+            ],
+            "qualifiedClassName": "Emoji"
+        }
+    ],
+    "inputFile": "emoji.h",
+    "outputRevision": 69
+}

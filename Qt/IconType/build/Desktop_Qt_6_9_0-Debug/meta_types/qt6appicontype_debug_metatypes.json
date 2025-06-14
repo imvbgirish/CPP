@@ -1,0 +1,93 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "MyEmoji"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "true"
+                    },
+                    {
+                        "name": "QML.CreationMethod",
+                        "value": "structured"
+                    }
+                ],
+                "className": "Emoji",
+                "gadget": true,
+                "lineNumber": 7,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "myEmojiType",
+                        "read": "myEmojiType",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setMyEmojiType"
+                    }
+                ],
+                "qualifiedClassName": "Emoji"
+            }
+        ],
+        "inputFile": "emoji.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "MyMessage"
+                    }
+                ],
+                "className": "Message",
+                "lineNumber": 9,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "emoji",
+                        "notify": "emojiChanged",
+                        "read": "emoji",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Emoji",
+                        "user": false,
+                        "write": "setEmoji"
+                    }
+                ],
+                "qualifiedClassName": "Message",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "emojiChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "message.h",
+        "outputRevision": 69
+    }
+]
