@@ -54,26 +54,32 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../../Person.cpp \
 		../../admin.cpp \
+		../../bookingdetails.cpp \
 		../../cash.cpp \
+		../../fileoperation.cpp \
 		../../main.cpp \
 		../../managelogin.cpp \
 		../../paymentMode.cpp \
 		../../rentalbike.cpp \
 		../../rentalcar.cpp \
-		../../rentvehicledetails.cpp \
+		../../rentvehicles.cpp \
 		../../upi.cpp \
-		../../user.cpp 
+		../../user.cpp \
+		../../vehiclemanagement.cpp 
 OBJECTS       = Person.o \
 		admin.o \
+		bookingdetails.o \
 		cash.o \
+		fileoperation.o \
 		main.o \
 		managelogin.o \
 		paymentMode.o \
 		rentalbike.o \
 		rentalcar.o \
-		rentvehicledetails.o \
+		rentvehicles.o \
 		upi.o \
-		user.o
+		user.o \
+		vehiclemanagement.o
 DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/common/unix.conf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/common/linux.conf \
@@ -305,24 +311,30 @@ DIST          = /home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/features/lex.prf \
 		../../../../Rental_Management_CPP.pro Person.h \
 		admin.h \
+		bookingdetails.h \
 		cash.h \
+		fileoperation.h \
 		managelogin.h \
 		paymentMode.h \
 		rentalbike.h \
 		rentalcar.h \
-		rentvehicledetails.h \
+		rentvehicles.h \
 		upi.h \
-		user.h ../../Person.cpp \
+		user.h \
+		vehiclemanagement.h ../../Person.cpp \
 		../../admin.cpp \
+		../../bookingdetails.cpp \
 		../../cash.cpp \
+		../../fileoperation.cpp \
 		../../main.cpp \
 		../../managelogin.cpp \
 		../../paymentMode.cpp \
 		../../rentalbike.cpp \
 		../../rentalcar.cpp \
-		../../rentvehicledetails.cpp \
+		../../rentvehicles.cpp \
 		../../upi.cpp \
-		../../user.cpp
+		../../user.cpp \
+		../../vehiclemanagement.cpp
 QMAKE_TARGET  = Rental_Management_CPP
 DESTDIR       = ../../bins/
 TARGET        = ../../bins/Rental_Management_CPP
@@ -846,29 +858,51 @@ admin.o: ../../admin.cpp ../../admin.h \
 		../../Person.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o admin.o ../../admin.cpp
 
+bookingdetails.o: ../../bookingdetails.cpp ../../bookingdetails.h \
+		../../paymentMode.h \
+		../../rentvehicles.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bookingdetails.o ../../bookingdetails.cpp
+
 cash.o: ../../cash.cpp ../../cash.h \
 		../../paymentMode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o cash.o ../../cash.cpp
 
-main.o: ../../main.cpp 
+fileoperation.o: ../../fileoperation.cpp ../../fileoperation.h \
+		../../Person.h \
+		../../bookingdetails.h \
+		../../paymentMode.h \
+		../../rentvehicles.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fileoperation.o ../../fileoperation.cpp
+
+main.o: ../../main.cpp ../../fileoperation.h \
+		../../Person.h \
+		../../bookingdetails.h \
+		../../paymentMode.h \
+		../../rentvehicles.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
-managelogin.o: ../../managelogin.cpp ../../managelogin.h
+managelogin.o: ../../managelogin.cpp ../../managelogin.h \
+		../../Person.h \
+		../../vehiclemanagement.h \
+		../../bookingdetails.h \
+		../../paymentMode.h \
+		../../rentvehicles.h \
+		../../fileoperation.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o managelogin.o ../../managelogin.cpp
 
 paymentMode.o: ../../paymentMode.cpp ../../paymentMode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o paymentMode.o ../../paymentMode.cpp
 
 rentalbike.o: ../../rentalbike.cpp ../../rentalbike.h \
-		../../rentvehicledetails.h
+		../../rentvehicles.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rentalbike.o ../../rentalbike.cpp
 
 rentalcar.o: ../../rentalcar.cpp ../../rentalcar.h \
-		../../rentvehicledetails.h
+		../../rentvehicles.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rentalcar.o ../../rentalcar.cpp
 
-rentvehicledetails.o: ../../rentvehicledetails.cpp ../../rentvehicledetails.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rentvehicledetails.o ../../rentvehicledetails.cpp
+rentvehicles.o: ../../rentvehicles.cpp ../../rentvehicles.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rentvehicles.o ../../rentvehicles.cpp
 
 upi.o: ../../upi.cpp ../../upi.h \
 		../../paymentMode.h
@@ -877,6 +911,16 @@ upi.o: ../../upi.cpp ../../upi.h \
 user.o: ../../user.cpp ../../user.h \
 		../../Person.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o user.o ../../user.cpp
+
+vehiclemanagement.o: ../../vehiclemanagement.cpp ../../vehiclemanagement.h \
+		../../bookingdetails.h \
+		../../paymentMode.h \
+		../../rentvehicles.h \
+		../../fileoperation.h \
+		../../Person.h \
+		../../rentalbike.h \
+		../../rentalcar.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o vehiclemanagement.o ../../vehiclemanagement.cpp
 
 ####### Install
 

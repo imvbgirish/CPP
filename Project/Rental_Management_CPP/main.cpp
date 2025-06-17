@@ -1,9 +1,11 @@
-#include <iostream>
+#include "fileoperation.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    FileOperation *file = nullptr;
+    file->readVehicleData();
+
     return 0;
 }

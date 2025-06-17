@@ -7,7 +7,8 @@
 class Cash : public PaymentMode
 {
 public:
-    Cash(std::string paymentType, std::string paymentID, std::string paymentStatus, std::string paidAmount);
+    Cash() = default;
+    Cash(std::string& paymentType, std::string& paymentID, std::string& paymentStatus, std::string& paidAmount);
     ~Cash();
 };
 
