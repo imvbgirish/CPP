@@ -10,24 +10,28 @@ SOURCES += \
         admin.cpp \
         bookingdetails.cpp \
         cash.cpp \
+        fileoperation.cpp \
         main.cpp \
         managelogin.cpp \
         paymentMode.cpp \
         rentalbike.cpp \
         rentalcar.cpp \
-        rentvehicledetails.cpp \
+        rentvehicles.cpp \
         upi.cpp \
-        user.cpp
+        user.cpp \
+        vehiclemanagement.cpp
 
 HEADERS += \
     Person.h \
     admin.h \
     bookingdetails.h \
     cash.h \
+    fileoperation.h \
     managelogin.h \
     paymentMode.h \
     rentalbike.h \
     rentalcar.h \
-    rentvehicledetails.h \
+    rentvehicles.h \
     upi.h \
-    user.h
+    user.h \
+    vehiclemanagement.h

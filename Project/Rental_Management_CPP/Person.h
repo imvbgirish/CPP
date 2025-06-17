@@ -6,22 +6,23 @@
 class Person
 {
 public:
-    Person(std::string name,std::string contactNumber,std::string email,std::string password,std::string admin);
+    Person();
+    Person(std::string& name,std::string& contactNumber,std::string& email,std::string& password,const std::string& admin);
     ~Person();
 
-    std::string name() const;
+    std::string getName() const;
     void setName(const std::string &newName);
 
-    std::string contactNumber() const;
+    std::string getContactNumber() const;
     void setContactNumber(const std::string &newContactNumber);
 
-    std::string email() const;
+    std::string getEmail() const;
     void setEmail(const std::string &newEmail);
 
-    std::string password() const;
+    std::string getPassword() const;
     void setPassword(const std::string &newPassword);
 
-    std::string isAdmin() const;
+    std::string getIsAdmin() const;
     void setIsAdmin(const std::string &newIsAdmin);
 
 private:
