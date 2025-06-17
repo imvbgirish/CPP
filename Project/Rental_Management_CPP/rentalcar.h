@@ -1,12 +1,13 @@
 #ifndef RENTALCAR_H
 #define RENTALCAR_H
 
-#include "rentvehicledetails.h"
+#include "rentvehicles.h"
 
-class RentalCar : public RentVehicleDetails
+class RentalCar : public RentVehicles
 {
 public:
-    RentalCar(std::string vehicleType, std::string brand, std::string model, std::string vehicleNumber, std::string status, int rentPrice);
+    RentalCar();
+    RentalCar(std::string& vehicleType, std::string& brand, std::string& model, std::string& vehicleNumber, std::string& status, int rentPrice);
     ~RentalCar();
 };
 

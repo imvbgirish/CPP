@@ -1,7 +1,12 @@
 #include "Person.h"
 
 
-Person::Person(std::string name, std::string contactNumber, std::string email, std::string password, std::string admin)
+Person::Person()
+{
+
+}
+
+Person::Person(std::string &name, std::string &contactNumber, std::string &email, std::string &password, const std::string &admin)
     :m_name{name}, m_contactNumber{contactNumber}, m_email{email}, m_password{password}, m_isAdmin{admin}
 {
 
@@ -12,7 +17,7 @@ Person::~Person()
 
 }
 
-std::string Person::name() const
+std::string Person::getName() const
 {
     return m_name;
 }
@@ -22,7 +27,7 @@ void Person::setName(const std::string &newName)
     m_name = newName;
 }
 
-std::string Person::contactNumber() const
+std::string Person::getContactNumber() const
 {
     return m_contactNumber;
 }
@@ -32,7 +37,7 @@ void Person::setContactNumber(const std::string &newContactNumber)
     m_contactNumber = newContactNumber;
 }
 
-std::string Person::email() const
+std::string Person::getEmail() const
 {
     return m_email;
 }
@@ -42,7 +47,7 @@ void Person::setEmail(const std::string &newEmail)
     m_email = newEmail;
 }
 
-std::string Person::password() const
+std::string Person::getPassword() const
 {
     return m_password;
 }
@@ -52,7 +57,7 @@ void Person::setPassword(const std::string &newPassword)
     m_password = newPassword;
 }
 
-std::string Person::isAdmin() const
+std::string Person::getIsAdmin() const
 {
     return m_isAdmin;
 }

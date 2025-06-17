@@ -6,7 +6,8 @@
 class UPI : public PaymentMode
 {
 public:
-    UPI(std::string paymentType, std::string paymentID, std::string paymentStatus, std::string paidAmount);
+    UPI() = default;
+    UPI(std::string& paymentType, std::string& paymentID, std::string& paymentStatus, std::string& paidAmount);
     ~UPI();
 };
 

@@ -5,19 +5,20 @@
 class PaymentMode
 {
 public:
-    PaymentMode(std::string paymentType, std::string paymentID, std::string paymentStatus, std::string paidAmount);
+    PaymentMode() = default;
+    PaymentMode(std::string& paymentType, std::string& paymentID, std::string& paymentStatus, std::string& paidAmount);
     ~PaymentMode();
 
-    std::string paymentType() const;
+    std::string getPaymentType() const;
     void setPaymentType(const std::string &newPaymentType);
 
-    std::string paymentID() const;
+    std::string getPaymentID() const;
     void setPaymentID(const std::string &newPaymentID);
 
-    std::string paymentStatus() const;
+    std::string getPaymentStatus() const;
     void setPaymentStatus(const std::string &newPaymentStatus);
 
-    std::string paidAmount() const;
+    std::string getPaidAmount() const;
     void setPaidAmount(const std::string &newPaidAmount);
 
 private:
