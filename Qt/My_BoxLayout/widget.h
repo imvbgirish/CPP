@@ -2,7 +2,6 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QLayoutItem>
 
 class Widget : public QWidget
 {
@@ -11,5 +10,10 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+
+    void createButton();
+
+public slots:
+    void click();
 };
 #endif // WIDGET_H

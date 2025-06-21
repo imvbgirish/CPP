@@ -1,6 +1,6 @@
 #include <QPushButton>
-
 #include <QApplication>
+#include <QLayoutItem>
 
 int main(int argc, char *argv[])
 {
@@ -11,15 +11,11 @@ int main(int argc, char *argv[])
     window.setFixedSize(500,300);
     QPushButton *pushbutton = new QPushButton("Hello world",&window);
     pushbutton->setGeometry(10,10,100,50);
+
+    QFont font ("Courier");
+    pushbutton->setFont(font);
+
     window.show();
-
-    // QFont font ("Courier");
-    // button.setFont(font);
-
-    // QPushButton button1("Girish");
-    // QPushButton button2("Inside", &button1);
-
-
 
     return a.exec();
 }
