@@ -61,3 +61,21 @@ void MainWindow::onShapeSelected(Shape::ShapeType shape) {
 
     drawingArea->setProperties(shape, width, penCol, brushCol);
 }
+
+
+// MainWindow (QWidget)
+// ├── QHBoxLayout (mainLayout)
+// │   ├── QVBoxLayout (shapeButtonsLayout)
+// │   │   ├── QPushButton("Circle")
+// │   │   ├── QPushButton("Rectangle")
+// │   │   └── ... (plus a stretch)
+// │   └── QVBoxLayout (rightLayout)
+// │       ├── QHBoxLayout (controlsLayout)
+// │       │   ├── QLabel("Pen Width")
+// │       │   ├── QLineEdit("3")
+// │       │   ├── QLabel("Pen Color")
+// │       │   ├── QLineEdit("White")
+// │       │   ├── QLabel("Brush Color")
+// │       │   └── QLineEdit("Black")
+// │       └── Shape (drawingArea)
+
