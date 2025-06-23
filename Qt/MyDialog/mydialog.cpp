@@ -3,12 +3,13 @@
 #include <QCloseEvent>
 #include <QMessageBox>
 #include <QHideEvent>
+#include <QPushButton>
 
 MyDialog::MyDialog(QWidget *parent)
     : QDialog(parent)
 {
-    // setWindowTitle("Reject vs CloseEvent");
     resize(600, 300);
+    add();
 }
 
 MyDialog::~MyDialog()
@@ -19,13 +20,13 @@ void MyDialog::closeEvent(QCloseEvent *event)
 {
     qDebug() << "closeEvent called";
 
-    // Ask the user whether to allow closing
     QMessageBox::StandardButton reply = QMessageBox::question(
         this,
         "Confirm Close",
         "Do you want to close the dialog?",
         QMessageBox::Yes | QMessageBox::No
         );
+
 
     if (reply == QMessageBox::Yes) {
         event->accept();
@@ -34,6 +35,7 @@ void MyDialog::closeEvent(QCloseEvent *event)
         event->ignore();
         qDebug() << "closeEvent ignored";
     }
+
 }
 
 void MyDialog::reject()
@@ -48,28 +50,10 @@ void MyDialog::setVisible(bool visible)
     qDebug() << "Dialog visibility changed:" << (visible ? "shown" : "hidden");
 }
 
-
-// #include "mydialog.h"
-// #include <QDebug>
-// #include <QCloseEvent>
-
-// MyDialog::MyDialog(QWidget *parent)
-//     : QDialog(parent)
-// {
-// }
-
-// MyDialog::~MyDialog()
-// {
-// }
-
-// void MyDialog::closeEvent(QCloseEvent *event)
-// {
-//     qDebug() << "closeEvent called";
-//     QDialog::closeEvent(event);
-// }
-
-// void MyDialog::reject()
-// {
-//     qDebug() << "reject called";
-//     QDialog::reject();
-// }
+void MyDialog::add()
+{
+    QMessageBox* box = new QMessageBox(this);
+    QPushButton* button = new QPushButton("Girish",this);
+    box->addButton(button,QMessageBox::AcceptRole);
+    box->exec();
+}

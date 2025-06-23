@@ -12,9 +12,10 @@ public:
     ~MyDialog();
 
 protected:
-    void closeEvent(QCloseEvent *event) override;  // Override closeEvent to test
-    void reject() override;                         // Override reject to test
+    void closeEvent(QCloseEvent *event) override;
+    void reject() override;
     void setVisible(bool visible) override;
+    void add();
 
 };
 
