@@ -3,9 +3,7 @@ import QtQuick
 Rectangle {
    id: myItem
    signal message(string msg)
-
-   width: 100; height: 100
-   x: 200
+   anchors.fill: parent
    color: "red"
 
    MouseArea {
@@ -15,6 +13,8 @@ Rectangle {
 
    Component.onCompleted: {
          hello()
-         helloItem()
+         // helloItem()
+      loaderParent.helloItem()
       }
+
 }
