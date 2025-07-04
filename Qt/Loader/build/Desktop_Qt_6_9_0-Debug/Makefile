@@ -843,7 +843,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_qml.cpp
 qrc_qml.cpp: ../../qml.qrc \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/libexec/rcc \
-		../../MyItem.qml \
+		../../Loded.qml \
 		../../main.qml
 	/home/girish-v-b/Qt/6.9.0/gcc_64/libexec/rcc -name qml ../../qml.qrc -o qrc_qml.cpp
 
