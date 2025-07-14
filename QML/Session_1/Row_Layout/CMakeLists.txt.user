@@ -115,7 +115,7 @@
 -DQT_MAINTENANCE_TOOL:FILEPATH=/home/girish-v-b/Qt/MaintenanceTool
 -DCMAKE_COLOR_DIAGNOSTICS:BOOL=ON</value>
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/girish-v-b/CPP/QML/My_Example/Login/build/Desktop_Qt_6_9_0-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/girish-v-b/CPP/QML/Session_1/Row_Layout/build/Desktop_Qt_6_9_0-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -216,14 +216,14 @@
      <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
      <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
      <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph dwarf,4096 -F 250</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">appLogin</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">appRow_Layout</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.</value>
-     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">appLogin</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">appRow_Layout</value>
      <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
      <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
      <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
      <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/girish-v-b/CPP/QML/My_Example/Login/build/Desktop_Qt_6_9_0-Debug</value>
+     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/girish-v-b/CPP/QML/Session_1/Row_Layout/build/Desktop_Qt_6_9_0-Debug</value>
     </valuemap>
     <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
    </valuemap>
@@ -285,14 +285,14 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
     <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph dwarf,4096 -F 250</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">appLogin</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">appRow_Layout</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">appLogin</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">appRow_Layout</value>
     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/girish-v-b/CPP/QML/My_Example/Login/build/Desktop_Qt_6_9_0-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/girish-v-b/CPP/QML/Session_1/Row_Layout/build/Desktop_Qt_6_9_0-Debug</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
