@@ -83,22 +83,17 @@ Window {
             anchors.top: rect.bottom
             anchors.horizontalCenter: rect.right
 
-            Button{
-                id: submit
-                // text: qsTr("Submit")
-                height: 100
-                width: 100
+        }
+    }
 
-                background: Rectangle{
-                    color: "blue"
-                    radius: 50
-                }
+    Button{
+        id: submit
+        text: qsTr("Submit")
 
-                Text{
-                    text: "Submit"
-                    font.pixelSize: 20
-                }
-            }
+        Text{
+            text: "Submit"
+            color: "white"
+            font.pixelSize: 15
         }
     }
 }
