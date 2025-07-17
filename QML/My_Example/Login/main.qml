@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 Window {
     width: 1920
@@ -32,6 +33,10 @@ Window {
             source: "qrc:/Login/fonts/RobotoSlab-VariableFont_wght.ttf"
         }
 
+        ColumnLayout {
+
+        }
+
         Text {
             id: head
             text: qsTr("Welcome back...")
@@ -45,14 +50,6 @@ Window {
             anchors.topMargin: rect1.height/6
         }
 
-        TextField {
-            placeholderText: qsTr("username")
-            height: rect1.height/10
-            width: rect1.width/4
-            anchors.top: parent.top
-            anchors.right: parent.right
-            anchors.rightMargin: parent.width/6.5
-            anchors.topMargin: parent.height/3.5
-        }
+
     }
 }
