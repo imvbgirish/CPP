@@ -1,4 +1,0 @@
-module My_Layout
-typeinfo appMy_Layout.qmltypes
-prefer :/My_Layout/
-

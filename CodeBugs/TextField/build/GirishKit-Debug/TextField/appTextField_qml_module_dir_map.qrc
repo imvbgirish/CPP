@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/TextField">/home/girish-v-b/CPP/CodeBugs/TextField/build/GirishKit-Debug/TextField</file>
+
+  </qresource>
+</RCC>

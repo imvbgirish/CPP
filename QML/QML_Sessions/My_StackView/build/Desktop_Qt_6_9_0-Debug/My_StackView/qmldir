@@ -1,4 +1,0 @@
-module My_StackView
-typeinfo appMy_StackView.qmltypes
-prefer :/My_StackView/
-

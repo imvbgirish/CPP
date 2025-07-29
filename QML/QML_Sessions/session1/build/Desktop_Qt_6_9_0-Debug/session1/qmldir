@@ -1,4 +1,0 @@
-module session1
-typeinfo appsession1.qmltypes
-prefer :/session1/
-

@@ -1,0 +1,7 @@
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/template_tutorial_task.dir
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/edit_cache.dir
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/rebuild_cache.dir
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/list_install_components.dir
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/install.dir
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/install/local.dir
+/home/girish-v-b/Downloads/SendAnywhere_392494/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/install/strip.dir

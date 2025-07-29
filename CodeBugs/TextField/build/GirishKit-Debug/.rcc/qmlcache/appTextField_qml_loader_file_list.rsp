@@ -1,0 +1,5 @@
+--resource
+/home/girish-v-b/CPP/CodeBugs/TextField/build/GirishKit-Debug/.qt/rcc/qmake_TextField.qrc
+--resource
+/home/girish-v-b/CPP/CodeBugs/TextField/build/GirishKit-Debug/.qt/rcc/appTextField_raw_qml_0.qrc
+/TextField/main.qml

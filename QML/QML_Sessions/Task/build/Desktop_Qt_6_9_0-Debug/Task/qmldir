@@ -1,4 +1,0 @@
-module Task
-typeinfo appTask.qmltypes
-prefer :/Task/
-
