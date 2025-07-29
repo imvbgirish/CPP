@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/Login">
-        <file>pics/watch.png</file>
-    </qresource>
-</RCC>
-

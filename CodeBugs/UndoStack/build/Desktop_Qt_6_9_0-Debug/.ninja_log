@@ -1,0 +1,9 @@
+# ninja log v5
+8	440	1753780399838104512	UndoStack_autogen/timestamp	4e81dd5e2167be9b
+8	440	1753780399838104512	UndoStack_autogen/mocs_compilation.cpp	4e81dd5e2167be9b
+8	440	1753780399838104512	/home/girish-v-b/CPP/CodeBugs/UndoStack/build/Desktop_Qt_6_9_0-Debug/UndoStack_autogen/timestamp	4e81dd5e2167be9b
+8	440	1753780399838104512	/home/girish-v-b/CPP/CodeBugs/UndoStack/build/Desktop_Qt_6_9_0-Debug/UndoStack_autogen/mocs_compilation.cpp	4e81dd5e2167be9b
+441	2562	1753780401964153141	CMakeFiles/UndoStack.dir/UndoStack_autogen/mocs_compilation.cpp.o	63636a55c8505af1
+442	3554	1753780402956175812	CMakeFiles/UndoStack.dir/main.cpp.o	8d2e4d1bd763c884
+442	3579	1753780402981176383	CMakeFiles/UndoStack.dir/mainwindow.cpp.o	467cd858d9a37843
+3579	4057	1753780403453187164	UndoStack	f894ffae38a9586f

@@ -1,4 +1,0 @@
-module Task2
-typeinfo appTask2.qmltypes
-prefer :/Task2/
-

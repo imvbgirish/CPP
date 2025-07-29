@@ -1,0 +1,36 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"popupType\".",
+                        "functionName": "popupType",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"activeFocusChanged\".",
+                        "functionName": "onActiveFocusChanged",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 29,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"focusChanged\".",
+                        "functionName": "onFocusChanged",
+                        "line": 35
+                    }
+                ],
+                "filepath": "/home/girish-v-b/CPP/CodeBugs/TextField/main.qml"
+            }
+        ],
+        "moduleId": "TextField(appTextField)"
+    }
+]
