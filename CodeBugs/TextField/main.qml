@@ -1,43 +1,23 @@
-import QtQuick
-import QtQuick.Controls
-import QtQuick.Window
-import QtQuick.Controls 6.9
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 
-Window {
-    id: root
-    width: 450
-    height: 700
-    visible: true
-    x: 200
-    y: 200
-    color: "green"
-    title: "QTBUG-138469 Reproduction"
+DropArea {
+    id: dropArea
+    width: 200
+    height: 200
+    keys: ["application/x-color"]
 
-    Popup {
-        id: popup
-        width: 100
-        height: 300
-        visible: true   // Show on app start
-
-        // popupType: Popup.Item   // Keyboard input works
-        popupType: Popup.Native // Keyboard input broken
-        // popupType: Popup.Window    // Keyboard input broken
-
-        background: Rectangle {
-            color: "red"
+    onDropped: drop => {
+        if (drop.hasColor) {
+            if (drop.proposedAction === Qt.CopyAction) {
+                drop.acceptProposedAction();
+            }
         }
+    }
 
-        contentItem: TextField {
-            id: textField
-            placeholderText: "Type here"
-            focus: true
-            onActiveFocusChanged: console.log("TextField activeFocus:", activeFocus)
-            onFocusChanged: console.log("TextField focus:", focus)
-
-            // Component.onCompleted: {
-            //     // Try to request focus (has no effect in Popup.Window mode)
-            //     forceActiveFocus()
-            // }
+    onEntered: drag => {
+        if (!drag.hasColor) {
+            drag.accepted = false;
         }
     }
 }

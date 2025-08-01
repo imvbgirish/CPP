@@ -12,14 +12,14 @@ private slots:
 
 void AnticipateMessageTest::testWarningAppears()
 {
-    QTest::anticipateMessage(QtWarningMsg, "Expected warning");
+    QTest::expectMessage(QtWarningMsg, "Expected warning");
     qWarning("Expected warning");  // Message matches → PASS
 }
 
 void AnticipateMessageTest::testWarningMissing()
 {
-    QTest::anticipateMessage(QtWarningMsg, "This will not be emitted");
-    // qWarning("This will not be emitted");
+    QTest::expectMessage(QtWarningMsg, "This will not be emitted");
+    qWarning("This will not be emitted");
 }
 
 QTEST_MAIN(AnticipateMessageTest)

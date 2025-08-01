@@ -41,7 +41,7 @@ text_viewer_t::text_viewer_t(QWidget *parent)
     : QWidget(parent)
 {
     layout = new QTextLayout();
-    layout->setText(QString::fromUtf8("ABCDEF"));
+    layout->setText(QString::fromUtf8("DD33"));
     QFont font = ((QApplication *) QApplication::instance())->font();
     font.setFamily(QString::fromUtf8("Courier New"));
     font.setPointSize(80);
@@ -50,17 +50,17 @@ text_viewer_t::text_viewer_t(QWidget *parent)
     // prepare the "selection" formats, that will be used at `QTextLayout::draw`-time
     format_desc_tuple_t selections_descs[] =
         {
-         // { 0, 1, "red" },
-         // { 1, 1, "red" },
-         // // <========== THIS IS THE OVERRIDE THAT WON'T BE APPLIED (unless a background is effectively set to the FormatRange)
-         // { 2, 2, "red" }
+         { 0, 0, "red" },
+         { 1, 1, "red" },
+         // <========== THIS IS THE OVERRIDE THAT WON'T BE APPLIED (unless a background is effectively set to the FormatRange)
+         { 2, 2, "red" }
 
         // {0, 2, "blue"},    // DD
         // {1, 2, "red"},     // D3
         // {2, 3, "green"},   // 3
 
-        {0, 6, "gray"},    // All characters gray
-        {2, 6, "red"},     // CD should be red
+        // {0, 6, "gray"},    // All characters gray
+        // {2, 6, "red"},     // CD should be red
 
         };
     make_formats(&selection_overrides, selections_descs, sizeof(selections_descs) / sizeof(selections_descs[0]));
