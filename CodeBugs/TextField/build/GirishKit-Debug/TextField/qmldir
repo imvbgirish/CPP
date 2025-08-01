@@ -1,4 +1,0 @@
-module TextField
-typeinfo appTextField.qmltypes
-prefer :/TextField/
-
