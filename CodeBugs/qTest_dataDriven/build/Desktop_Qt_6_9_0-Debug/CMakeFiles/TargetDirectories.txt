@@ -1,0 +1,6 @@
+/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/QOperatingSystemVersion.dir
+/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/test.dir
+/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/edit_cache.dir
+/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/rebuild_cache.dir
+/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/QOperatingSystemVersion_autogen_timestamp_deps.dir
+/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/QOperatingSystemVersion_autogen.dir

@@ -1,0 +1,5 @@
+--resource
+/home/girish-v-b/CPP/CodeBugs/qmlIncubator/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/qmake_qmlIncubator.qrc
+--resource
+/home/girish-v-b/CPP/CodeBugs/qmlIncubator/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/appqmlIncubator_raw_qml_0.qrc
+/qmlIncubator/main.qml

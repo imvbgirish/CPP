@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/My_combo">/home/girish-v-b/CPP/CodeBugs/My_combo/build/GirishKit-Debug/My_combo</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_QOperatingSystemVersion_FILE /home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/QOperatingSystemVersion)
+set(__QT_DEPLOY_TARGET_QOperatingSystemVersion_TYPE EXECUTABLE)

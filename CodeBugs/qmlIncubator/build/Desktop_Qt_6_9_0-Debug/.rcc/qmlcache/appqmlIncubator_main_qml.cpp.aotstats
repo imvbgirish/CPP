@@ -1,0 +1,12 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                ],
+                "filepath": "/home/girish-v-b/CPP/CodeBugs/qmlIncubator/main.qml"
+            }
+        ],
+        "moduleId": "qmlIncubator(appqmlIncubator)"
+    }
+]
