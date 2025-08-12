@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/videos">
+    <file>video1.mp4</file>
+    <file>video2.mp4</file>
+  </qresource>
+  <qresource prefix="/">
+    <file>main.qml</file>
+  </qresource>
+</RCC>
+
