@@ -1,0 +1,10 @@
+-I
+/home/girish-v-b/CPP/CodeBugs/My_combo/build/GirishKit-Debug
+-I
+/home/girish-v-b/qt-bugfix/qt-install/qml
+--resource
+/home/girish-v-b/CPP/CodeBugs/My_combo/build/GirishKit-Debug/.qt/rcc/qmake_My_combo.qrc
+--resource
+/home/girish-v-b/CPP/CodeBugs/My_combo/build/GirishKit-Debug/.qt/rcc/appMy_combo_raw_qml_0.qrc
+--module
+My_combo

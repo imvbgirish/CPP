@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appqmlIncubator_FILE /home/girish-v-b/CPP/CodeBugs/qmlIncubator/build/Desktop_Qt_6_9_0-Debug/appqmlIncubator)
+set(__QT_DEPLOY_TARGET_appqmlIncubator_TYPE EXECUTABLE)

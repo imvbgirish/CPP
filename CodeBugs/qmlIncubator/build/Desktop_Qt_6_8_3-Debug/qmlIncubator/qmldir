@@ -1,0 +1,4 @@
+module qmlIncubator
+typeinfo appqmlIncubator.qmltypes
+prefer :/qmlIncubator/
+

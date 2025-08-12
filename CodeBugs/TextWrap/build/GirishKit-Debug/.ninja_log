@@ -1,0 +1,15 @@
+# ninja log v5
+2	383	1754116074805557784	TextWrap_autogen/timestamp	16c551b203b3ee85
+2	383	1754116074805557784	TextWrap_autogen/mocs_compilation.cpp	16c551b203b3ee85
+2	383	1754116074805557784	/home/girish-v-b/CPP/CodeBugs/TextWrap/build/GirishKit-Debug/TextWrap_autogen/timestamp	16c551b203b3ee85
+2	383	1754116074805557784	/home/girish-v-b/CPP/CodeBugs/TextWrap/build/GirishKit-Debug/TextWrap_autogen/mocs_compilation.cpp	16c551b203b3ee85
+385	2504	1754116076930321122	CMakeFiles/TextWrap.dir/widget.cpp.o	55c55c790a65af9d
+384	3169	1754116077595247061	CMakeFiles/TextWrap.dir/TextWrap_autogen/mocs_compilation.cpp.o	e46efe48c8801f8f
+385	3379	1754116077805223673	CMakeFiles/TextWrap.dir/main.cpp.o	1231e55778bd28f2
+3379	3713	1754116078137186698	TextWrap	f2ee33feef84ed9e
+4	16	1754116548466403178	TextWrap_autogen/timestamp	16c551b203b3ee85
+4	16	1754116548466403178	TextWrap_autogen/mocs_compilation.cpp	16c551b203b3ee85
+4	16	1754116548466403178	/home/girish-v-b/CPP/CodeBugs/TextWrap/build/GirishKit-Debug/TextWrap_autogen/timestamp	16c551b203b3ee85
+4	16	1754116548466403178	/home/girish-v-b/CPP/CodeBugs/TextWrap/build/GirishKit-Debug/TextWrap_autogen/mocs_compilation.cpp	16c551b203b3ee85
+18	2056	1754116840134533260	CMakeFiles/TextWrap.dir/main.cpp.o	1231e55778bd28f2
+2056	2411	1754116840487508250	TextWrap	f2ee33feef84ed9e

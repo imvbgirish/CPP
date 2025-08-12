@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-030aa84a6054b5addb97.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TextWrap",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TextWrap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TextWrap-Debug-6add3cdd6f467cc9ab2d.json",
+					"name" : "TextWrap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TextWrap_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TextWrap_autogen-Debug-2189e07f6a56d2fbd3ab.json",
+					"name" : "TextWrap_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TextWrap_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TextWrap_autogen_timestamp_deps-Debug-f60da1ef8a3ce1b1b89d.json",
+					"name" : "TextWrap_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/girish-v-b/CPP/CodeBugs/TextWrap/build/Desktop_Qt_6_9_0-Debug",
+		"source" : "/home/girish-v-b/CPP/CodeBugs/TextWrap"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

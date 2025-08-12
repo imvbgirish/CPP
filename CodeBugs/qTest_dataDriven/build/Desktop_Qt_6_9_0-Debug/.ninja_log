@@ -1,0 +1,17 @@
+# ninja log v5
+3	8	0	CMakeFiles/clean.additional	65e41a1d38633037
+8	12	0	clean	a31eedcededa8236
+3	623	1754472159873953437	QOperatingSystemVersion_autogen/timestamp	871f46be95bd4ebd
+3	623	1754472159873953437	QOperatingSystemVersion_autogen/mocs_compilation.cpp	871f46be95bd4ebd
+3	623	1754472159873953437	/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/QOperatingSystemVersion_autogen/timestamp	871f46be95bd4ebd
+3	623	1754472159873953437	/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/QOperatingSystemVersion_autogen/mocs_compilation.cpp	871f46be95bd4ebd
+625	655	1754472159912955241	CMakeFiles/QOperatingSystemVersion.dir/QOperatingSystemVersion_autogen/mocs_compilation.cpp.o	731e6266312bf030
+4	10	0	CMakeFiles/clean.additional	65e41a1d38633037
+10	14	0	clean	a31eedcededa8236
+8	604	1754472515039588094	QOperatingSystemVersion_autogen/timestamp	871f46be95bd4ebd
+8	604	1754472515039588094	QOperatingSystemVersion_autogen/mocs_compilation.cpp	871f46be95bd4ebd
+8	604	1754472515039588094	/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/QOperatingSystemVersion_autogen/timestamp	871f46be95bd4ebd
+8	604	1754472515039588094	/home/girish-v-b/CPP/CodeBugs/qTest_dataDriven/build/Desktop_Qt_6_9_0-Debug/QOperatingSystemVersion_autogen/mocs_compilation.cpp	871f46be95bd4ebd
+604	628	1754472515065588929	CMakeFiles/QOperatingSystemVersion.dir/QOperatingSystemVersion_autogen/mocs_compilation.cpp.o	731e6266312bf030
+605	4265	1754472518706705813	CMakeFiles/QOperatingSystemVersion.dir/tst_qoperatingsystemversion.cpp.o	1e26d8f1e4c8ec1d
+4266	4473	1754472518912712417	QOperatingSystemVersion	c1b072819ca57ef6
