@@ -10,7 +10,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 15,
+                            "line": 16,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 19,
+                            "line": 20,
                             "message": "Could not find property \"y\"."
                         },
                         {
@@ -42,13 +42,13 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 20,
+                            "line": 21,
                             "message": "Could not find property \"width\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 44,
+                            "durationMicroseconds": 61,
                             "functionName": "model",
                             "line": 34,
                             "message": "Cannot access value for name combo"
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 10,
+                            "durationMicroseconds": 15,
                             "functionName": "fill",
                             "line": 33,
                             "message": "Cannot access value for name parent"
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 12,
+                            "durationMicroseconds": 18,
                             "functionName": "width",
                             "line": 38,
                             "message": "Cannot access value for name parent"
@@ -72,18 +72,90 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 219,
+                            "durationMicroseconds": 277,
                             "functionName": "text",
-                            "line": 41,
-                            "message": "Cannot access value for name model"
+                            "line": 42,
+                            "message": "Cannot access value for name modelData"
                         },
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 10,
+                            "durationMicroseconds": 14,
                             "functionName": "centerIn",
-                            "line": 40,
+                            "line": 41,
                             "message": "Cannot access value for name parent"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 36,
+                            "durationMicroseconds": 231,
+                            "functionName": "onClicked",
+                            "line": 48,
+                            "message": "Cannot access value for name combo"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 39,
+                            "durationMicroseconds": 14,
+                            "functionName": "fill",
+                            "line": 47,
+                            "message": "Cannot access value for name parent"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 34,
+                            "functionName": "top",
+                            "line": 65,
+                            "message": "Cannot retrieve a non-object type by ID: combo"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 160,
+                            "functionName": "horizontalCenter",
+                            "line": 67,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 71,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 76,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 43,
+                            "functionName": "text",
+                            "line": 87,
+                            "message": "Cannot retrieve a non-object type by ID: combo"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 103,
+                            "functionName": "top",
+                            "line": 83,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 92,
+                            "functionName": "left",
+                            "line": 84,
+                            "message": ""
                         }
                     ],
                     "filePath": "/home/girish-v-b/CPP/CodeBugs/My_combo/main.qml"

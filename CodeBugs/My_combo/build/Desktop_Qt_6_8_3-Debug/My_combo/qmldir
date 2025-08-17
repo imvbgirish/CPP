@@ -1,0 +1,4 @@
+module My_combo
+typeinfo appMy_combo.qmltypes
+prefer :/My_combo/
+

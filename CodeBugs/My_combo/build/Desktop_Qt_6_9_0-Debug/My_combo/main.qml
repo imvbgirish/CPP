@@ -3,7 +3,7 @@ import QtQuick.Controls 2.15
 
 ApplicationWindow {
     width: 300
-    height: 200
+    height: 250
     visible: true
 
     ComboBox {
@@ -11,10 +11,11 @@ ApplicationWindow {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         anchors.topMargin: 20
+        // editable: true
 
-        model: []   // empty model
+        model: []   // start empty
 
-        // Override the internal popup so it's always e.g. 100px tall
+        // Custom popup — do NOT bind visible
         popup: Popup {
             y: combo.height
             width: combo.width
@@ -28,38 +29,61 @@ ApplicationWindow {
                 radius: 4
             }
 
-            // Even though model is empty, this ListView will be shown
             contentItem: ListView {
                 anchors.fill: parent
                 model: combo.delegateModel
                 clip: true
 
                 delegate: Item {
-                    width: parent.width; height: 30
+                    width: parent.width
+                    height: 30
                     Text {
                         anchors.centerIn: parent
-                        text: model.index === -1 ? "(no items)" : modelData
-                        color: "gray"
+                        text: modelData
+                        color: "black"
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            combo.currentIndex = index
+                            combo.popup.close()
+                        }
                     }
                 }
             }
         }
+
+        // // Arrow respects canOpenPopup
+        // indicator.enabled: combo.canOpenPopup
+        // indicator.opacity: combo.canOpenPopup ? 1 : 0.4
     }
 
-    // // Button to also force-open the popup
-    // Button {
-    //     text: "Open Popup"
-    //     anchors.top: combo.bottom
-    //     anchors.topMargin: 20
-    //     anchors.horizontalCenter: combo.horizontalCenter
-    //     onClicked: combo.popup.open()
-    // }
+    // Buttons to test adding/clearing items
+    Row {
+        spacing: 10
+        anchors.top: combo.bottom
+        anchors.topMargin: 20
+        anchors.horizontalCenter: parent.horizontalCenter
 
-    // Text {
-    //     anchors.top: parent.bottom
-    //     anchors.bottomMargin: 10
-    //     anchors.horizontalCenter: parent.horizontalCenter
-    //     text: "Items: " + combo.count
-    //     font.pointSize: 12
-    // }
+        Button {
+            text: "Add Items"
+            onClicked: combo.model = ["One", "Two", "Three"]
+        }
+
+        Button {
+            text: "Clear Items"
+            onClicked: combo.model = []
+        }
+
+    }
+
+    Text {
+           id: statusText
+           anchors.top: parent.top
+           anchors.left: parent.left
+           anchors.leftMargin: 10
+           anchors.topMargin: 10
+           text: "canOpenPopup: " + combo.canOpenPopup
+       }
 }
