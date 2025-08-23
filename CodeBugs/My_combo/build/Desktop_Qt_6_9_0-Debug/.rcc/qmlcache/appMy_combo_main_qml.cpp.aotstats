@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 98,
                         "errorMessage": "Cannot access value for name combo",
                         "functionName": "model",
                         "line": 34
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 13,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 33
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 14,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "width",
                         "line": 38
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 339,
+                        "durationMicroseconds": 498,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 42
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 12,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "centerIn",
                         "line": 41
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 271,
+                        "durationMicroseconds": 415,
                         "errorMessage": "Cannot access value for name combo",
                         "functionName": "onClicked",
                         "line": 48
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 13,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 47
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 34,
+                        "durationMicroseconds": 58,
                         "errorMessage": "Cannot retrieve a non-object type by ID: combo",
                         "functionName": "top",
                         "line": 65
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 374,
+                        "durationMicroseconds": 524,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 67
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 18,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 70,
                         "errorMessage": "Cannot retrieve a non-object type by ID: combo",
                         "functionName": "text",
                         "line": 87
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 180,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 83
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 112,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 84

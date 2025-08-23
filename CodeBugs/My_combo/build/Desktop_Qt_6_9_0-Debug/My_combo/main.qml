@@ -11,7 +11,7 @@ ApplicationWindow {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         anchors.topMargin: 20
-        // editable: true
+        editable: true
 
         model: []   // start empty
 

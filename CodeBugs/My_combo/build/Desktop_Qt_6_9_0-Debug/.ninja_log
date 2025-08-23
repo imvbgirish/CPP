@@ -104,3 +104,16 @@
 411	445	1755331458270266247	CMakeFiles/appMy_combo.dir/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/qrc_appMy_combo_raw_qml_0.cpp.o	3d1d36cd83840b38
 411	3176	1755331460999976532	CMakeFiles/appMy_combo.dir/build/Desktop_Qt_6_9_0-Debug/.rcc/qmlcache/appMy_combo_main_qml.cpp.o	e9c2d61ef876005c
 3176	3807	1755331461625910549	appMy_combo	9773276bd7cc8e98
+32	42	1755679965746153792	.qt/appMy_combo_qml.txt	18c6aec9aecae104
+32	42	1755679965746153792	/home/girish-v-b/CPP/CodeBugs/My_combo/build/Desktop_Qt_6_9_0-Debug/.qt/appMy_combo_qml.txt	18c6aec9aecae104
+32	230	1755679965931555347	.qt/qml_imports/appMy_combo_build.cmake	7f995f9446444ad5
+32	230	1755679965931555347	/home/girish-v-b/CPP/CodeBugs/My_combo/build/Desktop_Qt_6_9_0-Debug/.qt/qml_imports/appMy_combo_build.cmake	7f995f9446444ad5
+230	242	1755679965946150504	.qt/rcc/qrc_appMy_combo_raw_qml_0.cpp	1a47107c2579dbd4
+230	242	1755679965946150504	/home/girish-v-b/CPP/CodeBugs/My_combo/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/qrc_appMy_combo_raw_qml_0.cpp	1a47107c2579dbd4
+230	358	1755679966055148714	.rcc/qmlcache/appMy_combo_main_qml.cpp	87254fc108437c93
+230	358	1755679966055148714	.rcc/qmlcache/appMy_combo_main_qml.cpp.aotstats	87254fc108437c93
+230	358	1755679966055148714	/home/girish-v-b/CPP/CodeBugs/My_combo/build/Desktop_Qt_6_9_0-Debug/.rcc/qmlcache/appMy_combo_main_qml.cpp	87254fc108437c93
+230	358	1755679966055148714	/home/girish-v-b/CPP/CodeBugs/My_combo/build/Desktop_Qt_6_9_0-Debug/.rcc/qmlcache/appMy_combo_main_qml.cpp.aotstats	87254fc108437c93
+359	409	1755679966113147764	CMakeFiles/appMy_combo.dir/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/qrc_appMy_combo_raw_qml_0.cpp.o	3d1d36cd83840b38
+358	5059	1755679970761072032	CMakeFiles/appMy_combo.dir/build/Desktop_Qt_6_9_0-Debug/.rcc/qmlcache/appMy_combo_main_qml.cpp.o	e9c2d61ef876005c
+5059	5990	1755679971684057122	appMy_combo	9773276bd7cc8e98
