@@ -1,11 +1,12 @@
 #include "mycombomodel.h"
 
 MyComboModel::MyComboModel() {
-    m_sourceList << "Banana" << "Apple" << "Coco" << "f" << "h" << "v" << "n" << "m" << "s";
+    m_sourceList << "Banana" << "Apple" << "Coco";
+
     // m_list.append("B");
     // m_list.append("C");
 
-    m_timer.setInterval(1000);
+    m_timer.setInterval(2000);
     connect(&m_timer, &QTimer::timeout, this, &MyComboModel::addNextItem);
     m_timer.start();
 }
