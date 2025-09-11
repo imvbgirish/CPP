@@ -13,9 +13,8 @@ ApplicationWindow {
         anchors.topMargin: 20
         editable: true
 
-        model: []   // start empty
+        model: []
 
-        // Custom popup — do NOT bind visible
         popup: Popup {
             y: combo.height
             width: combo.width
@@ -23,8 +22,8 @@ ApplicationWindow {
             modal: false
 
             background: Rectangle {
-                color: "#ffeeaa"
-                border.color: "#aa3300"
+                color: "white"
+                border.color: "red"
                 border.width: 2
                 radius: 4
             }
@@ -39,7 +38,7 @@ ApplicationWindow {
                     height: 30
                     Text {
                         anchors.centerIn: parent
-                        text: modelData
+                        text: name
                         color: "black"
                     }
 
@@ -53,37 +52,20 @@ ApplicationWindow {
                 }
             }
         }
-
-        // // Arrow respects canOpenPopup
-        // indicator.enabled: combo.canOpenPopup
-        // indicator.opacity: combo.canOpenPopup ? 1 : 0.4
     }
 
-    // Buttons to test adding/clearing items
-    Row {
-        spacing: 10
-        anchors.top: combo.bottom
-        anchors.topMargin: 20
-        anchors.horizontalCenter: parent.horizontalCenter
+    ListModel {
+        id: fruitModel
 
-        Button {
-            text: "Add Items"
-            onClicked: combo.model = ["One", "Two", "Three"]
+        ListElement {
+            name: "Apple"
         }
-
-        Button {
-            text: "Clear Items"
-            onClicked: combo.model = []
+        ListElement {
+            name: "Orange"
         }
-
+        ListElement {
+            name: "Banana"
+        }
     }
 
-    Text {
-           id: statusText
-           anchors.top: parent.top
-           anchors.left: parent.left
-           anchors.leftMargin: 10
-           anchors.topMargin: 10
-           text: "canOpenPopup: " + combo.canOpenPopup
-       }
 }
