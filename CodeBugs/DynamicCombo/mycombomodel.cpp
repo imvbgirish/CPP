@@ -6,7 +6,7 @@ MyComboModel::MyComboModel() {
     // m_list.append("B");
     // m_list.append("C");
 
-    m_timer.setInterval(2000);
+    m_timer.setInterval(3000);
     connect(&m_timer, &QTimer::timeout, this, &MyComboModel::addNextItem);
     m_timer.start();
 }

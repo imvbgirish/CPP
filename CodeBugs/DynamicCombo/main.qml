@@ -19,7 +19,7 @@ Window {
             modal: false
 
             background: Rectangle {
-                color: "white"
+                color: "black"
                 border.color: "red"
                 border.width: 2
                 radius: 4
@@ -36,7 +36,7 @@ Window {
                     Text {
                         anchors.centerIn: parent
                         text: item
-                        color: "black"
+                        color: "white"
                     }
 
                     MouseArea {

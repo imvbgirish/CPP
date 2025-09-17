@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     mainWindow.resize(400, 400);
     mainWindow.show();
 
-    // comboBox->showPopup();
+    comboBox->showPopup();
 
     QTimer::singleShot(2000, [&comboBox](){
         comboBox->insertItem(0, "Item 0");
@@ -27,18 +27,18 @@ int main(int argc, char *argv[])
 
     QTimer::singleShot(2000, [&comboBox](){
         comboBox->insertItem(1, "Item 1");
-        comboBox->showPopup();
-    });
-
-    QTimer::singleShot(3000, [&comboBox](){
-        comboBox->clear();
-    });
-
-    QTimer::singleShot(4000, [&comboBox](){
-        comboBox->insertItem(0, "Item 1");
+        // comboBox->showPopup();
     });
 
     QTimer::singleShot(5000, [&comboBox](){
+        comboBox->clear();
+    });
+
+    QTimer::singleShot(6000, [&comboBox](){
+        comboBox->insertItem(0, "Item 1");
+    });
+
+    QTimer::singleShot(7000, [&comboBox](){
         comboBox->insertItem(1, "Item 2");
     });
 
