@@ -16,7 +16,7 @@ Window {
     }
 
     Timer {
-        interval: 2000
+        interval: 3000
         repeat: false
         running: true
         onTriggered: {

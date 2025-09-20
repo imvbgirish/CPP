@@ -10,7 +10,7 @@ Window {
     ComboBox {
         id: combo
         anchors.centerIn: parent
-        model: /*ComboModel*/ []
+        model: ComboModel /*[]*/
 
         popup: Popup {
             y: combo.height
