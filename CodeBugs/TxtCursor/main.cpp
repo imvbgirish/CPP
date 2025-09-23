@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
     qInfo() << tc.position() << tc.selectedText(); // prints: 3 "abc"
     tc.movePosition(QTextCursor::NextCharacter, QTextCursor::MoveAnchor);
     qInfo() << tc.position() << tc.selectedText(); // the cursor was not moved! prints: 3 ""
-    tc.movePosition(QTextCursor::NextCharacter, QTextCursor::MoveAnchor);
-    qInfo() << tc.position() << tc.selectedText();
+    // tc.movePosition(QTextCursor::NextCharacter, QTextCursor::MoveAnchor);
+    // qInfo() << tc.position() << tc.selectedText();
     w.setTextCursor(tc);
     w.show();
 

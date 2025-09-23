@@ -29,6 +29,5 @@ Window {
         // ensure combo has focus for keyboard testing
         combo.forceActiveFocus()
         console.log("Initially empty model. Press Space: popup should NOT open.")
-        // After 2s model will be populated. Press Space then: popup SHOULD open.
     }
 }
