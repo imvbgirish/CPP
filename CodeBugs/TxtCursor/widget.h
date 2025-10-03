@@ -10,5 +10,6 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+
 };
 #endif // WIDGET_H
