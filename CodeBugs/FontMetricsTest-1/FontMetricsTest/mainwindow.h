@@ -43,5 +43,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    static void fun(){
+        qDebug() << "Hey" ;
+    }
 };
 #endif // MAINWINDOW_H

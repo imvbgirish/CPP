@@ -10,6 +10,8 @@ int main(int argc, char *argv[])
     w.setFixedSize(500,500);
     w.show();
 
+    w.fun();
+
     qDebug() << sizeof(NULL);
     qDebug() << sizeof(nullptr);
 
