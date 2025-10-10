@@ -1,4 +1,4 @@
-pragma ComponentBehavior: Bound
+// pragma ComponentBehavior: Bound
 import QtQuick
 
 Rectangle {
@@ -7,7 +7,10 @@ Rectangle {
     color: "red"
     x: 150
     Component.onCompleted: {
-        helloItem()
+        // loader.hello()
+        // itm.helloItem()
+
         hello()
+        helloItem()
     }
 }

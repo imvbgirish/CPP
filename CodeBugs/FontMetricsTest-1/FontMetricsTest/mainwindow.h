@@ -28,7 +28,7 @@ protected:
         auto textWidth = fm.horizontalAdvance(text);
 
         // elieded text should be empty, but here "5"
-        auto elidedText = fm.elidedText(text, Qt::ElideRight, 5);
+        auto elidedText = fm.elidedText(text, Qt::ElideRight, 10);
 
         QRect targetRect(100, 100, 5, 20);
         p.drawText(targetRect, Qt::AlignCenter, elidedText);
