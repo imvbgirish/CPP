@@ -1,4 +1,3 @@
-// pragma ComponentBehavior: Bound
 import QtQuick
 
 Window {
@@ -16,6 +15,7 @@ Window {
         }
 
         Loader {
+            id: loader
             x: 50
             function hello() {
                 console.log("hello from Loader")
