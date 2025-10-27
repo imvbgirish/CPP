@@ -29,6 +29,7 @@ protected:
 
         // elieded text should be empty, but here "5"
         auto elidedText = fm.elidedText(text, Qt::ElideRight, 10);
+        qDebug() << elidedText;
 
         QRect targetRect(100, 100, 5, 20);
         p.drawText(targetRect, Qt::AlignCenter, elidedText);
