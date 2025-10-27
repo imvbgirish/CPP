@@ -1,0 +1,17 @@
+#include <iostream> // For std::cin, std::cout, std::endl
+#include <string>   // For std::string and std::getline
+
+int main() {
+    std::string lineInput; // Declare a string variable to store the input
+
+    // Prompt the user for input
+    std::cout << "Enter a line of text: ";
+
+    // Use std::getline() to read the entire line from std::cin into lineInput
+    std::getline(std::cin, lineInput);
+
+    // Display the entered line
+    std::cout << "You entered: " << lineInput << std::endl;
+
+    return 0;
+}

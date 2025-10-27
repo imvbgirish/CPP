@@ -7,10 +7,10 @@ Rectangle {
     color: "red"
     x: 150
     Component.onCompleted: {
-        // loader.hello()
-        // itm.helloItem()
+        loader.hello()
+        itm.helloItem()
 
-        hello()
-        helloItem()
+        // hello()
+        // helloItem()
     }
 }

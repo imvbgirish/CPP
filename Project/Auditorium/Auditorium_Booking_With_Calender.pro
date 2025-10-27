@@ -18,7 +18,7 @@ SOURCES += \
     date.cpp \
     main.cpp \
     month.cpp \
-    testauditorium.cpp \
+    # testauditorium.cpp \
     year.cpp
 
 HEADERS += \
@@ -30,7 +30,7 @@ HEADERS += \
     calendermanager.h \
     date.h \
     month.h \
-    testauditorium.h \
+    # testauditorium.h \
     year.h
 
 FORMS += \
